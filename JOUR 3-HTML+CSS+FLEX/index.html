@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloomPetals</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .grand-texte {
+  font-size: 1.5em; /* Ajustez la valeur en fonction de la taille souhaitée */
+}
+
+
+    .h1 {
+      font-size: 2em;
+    }
+
+    .deuxcent {
+      font-size: 200%;
+    }
+
+    .header, .footer {
+      background-color: rgb(112, 159, 112);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .header nav, .footer nav {
+      text-align: center;
+    }
+
+    .header ul, .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header ul li, .footer ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap; /* Permet le passage à la ligne des éléments */
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .item {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box; /* Garantit que le padding est inclus dans la largeur de l'élément */
+      text-align: center;
+    }
+
+    .box1, .box2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box {
+      width: 80%;
+      max-width: 400px; /* Ajustez cette valeur selon vos besoins */
+      text-align: center;
+      max-height: 150px;
+      overflow: hidden;
+    }
+
+    .photo-bloc img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Notre Équipe</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <div class="item">
+        <img src="images/bloomPetals.png" alt="Logo BloomPetals" class="logo">
+        <section class="grand-texte">
+          <h1>BloomPetals</h1>
+        
+      <p>
+          BloomPetals est une entreprise passionnée et créative spécialisée dans la confection
+de magnifiques bouquets floraux pour embellir vos événements spéciaux. Que ce soit
+un mariage, un anniversaire, une réception ou toute autre occasion festive.
+        </p>
+      </div>
+    </section>
+      <div class="item">
+        <div class="box1">
+          <div class="text-part">
+            <h2>Mariages</h2>
+            <div class="text-box">
+              <p>BloomPetals propose des bouquets de mariée, des compositions florales pour la cérémonie et la réception, ainsi que des décorations florales pour votre lieu de réception.</p>
+            </div>
+          </div>
+          <div class="text-part">
+            <h2>Anniversaires</h2>
+            <div class="text-box">
+              <p>BloomPetals propose des bouquets d'anniversaire, des compositions florales pour la décoration de votre table, ainsi que des fleurs pour votre gâteau.</p>
+            </div>
+          </div>
+          <div class="text-part">
+            <h2>Réceptions</h2>
+            <div class="text-box">
+              <p>BloomPetals propose des bouquets de réception, des compositions florales pour la décoration de votre salle, ainsi que des fleurs pour votre cocktail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="box2">
+          <div class="photo-bloc">
+            <div class="service">
+              <img src="images/imagemariage.jpg" alt="Mariage BloomPetals" class="realisations">
+              <h2>Mariages</h2>
+            </div>
+            <div class="service">
+              <img src="images/anniversaire.jpg" alt="Anniversaire BloomPetals" class="realisations">
+              <h2>Anniversaires</h2>
+            </div>
+            <div class="service">
+              <img src="images/reception.jpg" alt="Réception BloomPetals" class="realisations">
+              <img src="images/bouquet3.jpg" alt="Réception BloomPetals" class="realisations">
+              <h2>Réceptions</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Notre Équipe</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

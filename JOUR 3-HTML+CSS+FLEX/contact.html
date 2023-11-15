@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact - BloomPetals</title>
+    <style>
+        body {
+            background-color: #8ED081; /* Couleur de fond de la page */
+            color: white; /* Couleur du texte */
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #5D9B8B; /* Couleur du fond de la section principale */
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            margin-bottom: 16px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #114B5F; /* Couleur du bouton d'envoi */
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #5D9B8B; /* Couleur de fond du pied de page */
+            color: white; /* Couleur du texte dans le pied de page */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- La navigation a été déplacée vers le pied de page -->
+    </header>
+    <main>
+        <h1>Contactez-nous</h1>
+        <form action="#" method="post">
+            <label for="civilite">Civilité:</label>
+            <select id="civilite" name="civilite">
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+            </select><br>
+
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+
+            <label for="adresse">Adresse postale:</label>
+            <textarea id="adresse" name="adresse" rows="4" cols="50" required></textarea><br>
+
+            <input type="checkbox" id="confidentialite" name="confidentialite" required>
+            <label for="confidentialite">J'accepte les politiques de confidentialité</label><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
